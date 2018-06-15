@@ -21,7 +21,6 @@
 
 module.exports = {
 
-
   /**************************************************************************
   *                                                                         *
   * Tell Sails what database(s) it should use in production.                *
@@ -49,7 +48,7 @@ module.exports = {
     default: {
       // adapter: 'sails-mysql',
       // url: 'mysql://user:password@host:port/database',
-      //--------------------------------------------------------------------------
+      // --------------------------------------------------------------------------
       //  /\   To avoid checking it in to version control, you might opt to set
       //  ||   sensitive credentials like `url` using an environment variable.
       //
@@ -57,7 +56,7 @@ module.exports = {
       //  ```
       //  sails_datastores__default__url=mysql://admin:myc00lpAssw2D@db.example.com:3306/my_prod_db
       //  ```
-      //--------------------------------------------------------------------------
+      // --------------------------------------------------------------------------
 
       /****************************************************************************
       *                                                                           *
@@ -72,11 +71,9 @@ module.exports = {
       ****************************************************************************/
       // ssl: true,
 
-    },
+    }
 
   },
-
-
 
   models: {
 
@@ -90,7 +87,7 @@ module.exports = {
     * https://sailsjs.com/docs/concepts/models-and-orm/model-settings#?migrate *
     *                                                                          *
     ***************************************************************************/
-    migrate: 'safe',
+    migrate: 'safe'
 
     /***************************************************************************
     *                                                                          *
@@ -105,8 +102,6 @@ module.exports = {
 
   },
 
-
-
   /**************************************************************************
   *                                                                         *
   * Always disable "shortcut" blueprint routes.                             *
@@ -118,10 +113,8 @@ module.exports = {
   *                                                                         *
   ***************************************************************************/
   blueprints: {
-    shortcuts: false,
+    shortcuts: false
   },
-
-
 
   /***************************************************************************
   *                                                                          *
@@ -148,14 +141,12 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     cors: {
-      // allowOrigins: [
-      //   'https://example.com',
-      // ]
-    },
+      allRoutes: false,
+      allowOrigins: '*',
+      allowCredentials: false
+    }
 
   },
-
-
 
   /***************************************************************************
   *                                                                          *
@@ -186,7 +177,7 @@ module.exports = {
     ***************************************************************************/
     // adapter: '@sailshq/connect-redis',
     // url: 'redis://user:password@localhost:6379/databasenumber',
-    //--------------------------------------------------------------------------
+    // --------------------------------------------------------------------------
     // /\   OR, to avoid checking it in to version control, you might opt to
     // ||   set sensitive credentials like this using an environment variable.
     //
@@ -195,9 +186,7 @@ module.exports = {
     // sails_session__url=redis://admin:myc00lpAssw2D@bigsquid.redistogo.com:9562/0
     // ```
     //
-    //--------------------------------------------------------------------------
-
-
+    // --------------------------------------------------------------------------
 
     /***************************************************************************
     *                                                                          *
@@ -222,12 +211,10 @@ module.exports = {
     ***************************************************************************/
     cookie: {
       // secure: true,
-      maxAge: 24 * 60 * 60 * 1000,  // 24 hours
-    },
+      maxAge: 24 * 60 * 60 * 1000 // 24 hours
+    }
 
   },
-
-
 
   /**************************************************************************
   *                                                                          *
@@ -250,11 +237,9 @@ module.exports = {
     * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
     *                                                                          *
     ***************************************************************************/
-    // onlyAllowOrigins: [
-    //   'https://example.com',
-    //   'https://staging.example.com',
-    // ],
-
+    onlyAllowOrigins: [
+      'https://www.gatortyres.com'
+    ]
 
     /***************************************************************************
     *                                                                          *
@@ -270,7 +255,7 @@ module.exports = {
     ***************************************************************************/
     // adapter: '@sailshq/socket.io-redis',
     // url: 'redis://user:password@bigsquid.redistogo.com:9562/databasenumber',
-    //--------------------------------------------------------------------------
+    // --------------------------------------------------------------------------
     // /\   OR, to avoid checking it in to version control, you might opt to
     // ||   set sensitive credentials like this using an environment variable.
     //
@@ -278,11 +263,9 @@ module.exports = {
     // ```
     // sails_sockets__url=redis://admin:myc00lpAssw2D@bigsquid.redistogo.com:9562/0
     // ```
-    //--------------------------------------------------------------------------
+    // --------------------------------------------------------------------------
 
   },
-
-
 
   /**************************************************************************
   *                                                                         *
@@ -294,8 +277,6 @@ module.exports = {
   log: {
     level: 'debug'
   },
-
-
 
   http: {
 
@@ -322,11 +303,9 @@ module.exports = {
     * (https://sailsjs.com/config/http)                                        *
     *                                                                          *
     ***************************************************************************/
-    // trustProxy: true,
+    trustProxy: true
 
   },
-
-
 
   /**************************************************************************
   *                                                                         *
@@ -337,9 +316,7 @@ module.exports = {
   * this, just try deploying without setting it and see if it works.)       *
   *                                                                         *
   ***************************************************************************/
-  // port: 80,
-
-
+  port: 1338,
 
   /**************************************************************************
   *                                                                         *
@@ -360,8 +337,6 @@ module.exports = {
   **************************************************************************/
   // ssl: undefined,
 
-
-
   /**************************************************************************
   *                                                                         *
   * Production overrides for any custom settings specific to your app.      *
@@ -371,13 +346,14 @@ module.exports = {
   *                                                                         *
   ***************************************************************************/
   custom: {
-    baseUrl: 'https://example.com',
+    baseUrl: 'https://www.gatortyres.com',
     internalEmailAddress: 'support@example.com',
+    clientMtzCsv: '/var/www/html/reactphp-couchdb-importer/observados/client_motozone.txt'
 
     // mailgunDomain: 'mg.example.com',
     // mailgunSecret: 'key-prod_fake_bd32301385130a0bafe030c',
     // stripeSecret: 'sk_prod__fake_Nfgh82401348jaDa3lkZ0d9Hm',
-    //--------------------------------------------------------------------------
+    // --------------------------------------------------------------------------
     // /\   OR, to avoid checking them in to version control, you might opt to
     // ||   set sensitive credentials like these using environment variables.
     //
@@ -387,10 +363,8 @@ module.exports = {
     // sails_custom__mailgunSecret=key-prod_fake_bd32301385130a0bafe030c
     // sails_custom__stripeSecret=sk_prod__fake_Nfgh82401348jaDa3lkZ0d9Hm
     // ```
-    //--------------------------------------------------------------------------
+    // --------------------------------------------------------------------------
 
-  },
+  }
 
-
-
-};
+}
