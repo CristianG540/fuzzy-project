@@ -42,7 +42,8 @@ module.exports.routes = {
   //  ╠═╣╠═╝║  ║╣ ║║║ ║║╠═╝║ ║║║║║ ║ ╚═╗
   //  ╩ ╩╩  ╩  ╚═╝╝╚╝═╩╝╩  ╚═╝╩╝╚╝ ╩ ╚═╝
 
-  'GET /clientes/motorzone/search': { action: 'clientes/motorzone/search-clientes' }
+  'GET /clientes/motorzone/search': { action: 'clientes/motorzone/search-clientes' },
+  'GET /clientes/igb/search': { action: 'clientes/igb/search-clientes' }
 
   //  ╦ ╦╔═╗╔╗ ╦ ╦╔═╗╔═╗╦╔═╔═╗
   //  ║║║║╣ ╠╩╗╠═╣║ ║║ ║╠╩╗╚═╗
