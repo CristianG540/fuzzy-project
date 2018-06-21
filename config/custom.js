@@ -23,7 +23,8 @@ module.exports.custom = {
   // stripeSecret: 'sk_test_Zzd814nldl91104qor5911gjald',
   // …
 
-  clientMtzCsv: '/var/www/html/reactphp-couchdb-importer/observados/client_motozone.txt',
-  clientIgbCsv: '/var/www/html/reactphp-couchdb-importer/observados/client.txt'
+  clientMtzCsv: path.resolve(os.tmpdir(), 'fz3temp-2', 'client_motozone.txt'),
+  clientIgbCsv: path.resolve(os.tmpdir(), 'fz3temp-2', 'client.txt'),
+  prodsMtzCsv: path.resolve(os.tmpdir(), 'fz3temp-3', 'product_motozone.txt')
 
 }
