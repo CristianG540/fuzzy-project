@@ -24,24 +24,24 @@ module.exports = {
       outputExample: {
         productos: [
           {
-            'id': 'C73155701',
-            'asesor': '213',
-            'ciudad': 'GALAPA',
-            'direccion': 'CL 8 A 61 76 BRR VILLA OLIMPICA',
-            'nombre_cliente': 'MOTO LUJOS Y ALGO MAS Y/O BELLO VERGARA JUAN CARLOS',
-            'transportadora': '40',
-            'asesor_nombre': 'HUMBERTO CERPA ESCOBAR',
-            'telefono': '3162947287 JUAN'
+            '_id': 'RP137B51U',
+            'titulo': 'REPSOL AUTO',
+            'aplicacion': 'NEO 10W30',
+            'imagen': 'https://www.igbcolombia.com/img_app_motozone/RP137B51U.jpg',
+            'marcas': 'SEMI SINTETICO',
+            'unidad': 'UND',
+            'existencias': 5,
+            'precio': 22500
           },
           {
-            'id': 'C5110901',
-            'asesor': '191',
-            'ciudad': 'PIJI\ufffdO DEL CARMEN',
-            'direccion': 'CL 7 A 2 76',
-            'nombre_cliente': 'MOTO REPUESTOS Y VARIEDADES VIRGINIA Y/O NAVARRO HERRERA EDINSON',
-            'transportadora': '01',
-            'asesor_nombre': 'COBRO JURIDICO',
-            'telefono': '3135295532'
+            '_id': 'RP137B51',
+            'titulo': 'REPSOL AUTO',
+            'aplicacion': 'NEO 10W30',
+            'imagen': 'https://www.igbcolombia.com/img_app_motozone/RP137B51.jpg',
+            'marcas': 'SEMI SINTETICO',
+            'unidad': 'CP-1',
+            'existencias': 750,
+            'precio': 16293
           }
         ]
       },
