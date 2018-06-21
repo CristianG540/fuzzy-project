@@ -71,7 +71,6 @@ module.exports = {
     Papa.parse(fileStream, {
       header: true,
       complete: csvParsed => {
-        debugger
         const filteredProducts = _.filter(csvParsed.data, ['_delete', 'false'])
         // Attach an asynchronous callback to read the data at our posts reference
         const fuse = new Fuse(filteredProducts, options)
