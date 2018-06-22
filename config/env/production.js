@@ -350,7 +350,8 @@ module.exports = {
     internalEmailAddress: 'support@example.com',
     clientMtzCsv: '/var/www/html/reactphp-couchdb-importer/observados/client_motozone.txt',
     clientIgbCsv: '/var/www/html/reactphp-couchdb-importer/observados/client.txt',
-    prodsMtzCsv: '/var/www/html/reactphp-couchdb-importer/observados/product_motozone.txt'
+    prodsMtzCsv: '/var/www/html/reactphp-couchdb-importer/observados/product_motozone.txt',
+    prodsIgbCsv: '/var/www/html/reactphp-couchdb-importer/observados/product.txt'
     // mailgunDomain: 'mg.example.com',
     // mailgunSecret: 'key-prod_fake_bd32301385130a0bafe030c',
     // stripeSecret: 'sk_prod__fake_Nfgh82401348jaDa3lkZ0d9Hm',

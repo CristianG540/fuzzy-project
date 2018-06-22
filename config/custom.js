@@ -25,6 +25,7 @@ module.exports.custom = {
 
   clientMtzCsv: path.resolve(os.tmpdir(), 'fz3temp-2', 'client_motozone.txt'),
   clientIgbCsv: path.resolve(os.tmpdir(), 'fz3temp-2', 'client.txt'),
-  prodsMtzCsv: path.resolve(os.tmpdir(), 'fz3temp-3', 'product_motozone.txt')
+  prodsMtzCsv: path.resolve(os.tmpdir(), 'fz3temp-3', 'product_motozone.txt'),
+  prodsIgbCsv: path.resolve(os.tmpdir(), 'fz3temp-3', 'product.txt')
 
 }
