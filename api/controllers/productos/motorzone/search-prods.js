@@ -87,7 +87,8 @@ module.exports = {
             'marcas': marcaUnd[0],
             'unidad': marcaUnd[1],
             'existencias': parseInt(producto.cantInventario),
-            'precio': parseInt(producto.precio1)
+            'precio': parseInt(producto.precio1),
+            'descuento': producto.descuento
           }
         })
 
